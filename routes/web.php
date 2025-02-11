@@ -21,33 +21,33 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::middleware(['auth', 'admin'])->group(function () {
-    Route::get('/especialidades', [App\Http\Controllers\admin\SpecialtyController::class, 'index']);
+    Route::get('/especialidades', [App\Http\Controllers\Admin\SpecialtyController::class, 'index']);
 
-    Route::get('/especialidades/create', [App\Http\Controllers\admin\SpecialtyController::class, 'create']);
-    Route::get('/especialidades/{specialty}/edit', [App\Http\Controllers\admin\SpecialtyController::class, 'edit']);
-    Route::post('/especialidades', [App\Http\Controllers\admin\SpecialtyController::class, 'sendData']);
+    Route::get('/especialidades/create', [App\Http\Controllers\Admin\SpecialtyController::class, 'create']);
+    Route::get('/especialidades/{specialty}/edit', [App\Http\Controllers\Admin\SpecialtyController::class, 'edit']);
+    Route::post('/especialidades', [App\Http\Controllers\Admin\SpecialtyController::class, 'sendData']);
 
-    Route::put('/especialidades/{specialty}', [App\Http\Controllers\admin\SpecialtyController::class, 'update']);
-    Route::delete('/especialidades/{specialty}', [App\Http\Controllers\admin\SpecialtyController::class, 'destroy']);
+    Route::put('/especialidades/{specialty}', [App\Http\Controllers\Admin\SpecialtyController::class, 'update']);
+    Route::delete('/especialidades/{specialty}', [App\Http\Controllers\Admin\SpecialtyController::class, 'destroy']);
 
     //Ruta de Medicos
-    Route::resource('medicos','App\Http\Controllers\admin\DoctorController');
+    Route::resource('medicos','App\Http\Controllers\Admin\DoctorController');
 
     //Ruta de Pacientes
-    Route::resource('pacientes','App\Http\Controllers\admin\PatientController');
+    Route::resource('pacientes','App\Http\Controllers\Admin\PatientController');
 
     //Ruta de Reportes
-    Route::get('/reportes/citas/line', [App\Http\Controllers\admin\ChartController::class, 'appointments']);
-    Route::get('/reportes/doctors/column', [App\Http\Controllers\admin\ChartController::class, 'doctors']);
-    Route::get('/reportes/doctors/column/data', [App\Http\Controllers\admin\ChartController::class, 'doctorsJason']);
+    Route::get('/reportes/citas/line', [App\Http\Controllers\Admin\ChartController::class, 'appointments']);
+    Route::get('/reportes/doctors/column', [App\Http\Controllers\Admin\ChartController::class, 'doctors']);
+    Route::get('/reportes/doctors/column/data', [App\Http\Controllers\Admin\ChartController::class, 'doctorsJason']);
 });
 
 
 //Rutas de Medicos
 Route::middleware(['auth', 'doctor'])->group(function ()
 {
-    Route::get('/horario', [App\Http\Controllers\doctor\HorarioController::class, 'edit']);
-    Route::post('/horario', [App\Http\Controllers\doctor\HorarioController::class, 'store']);
+    Route::get('/horario', [App\Http\Controllers\Doctor\HorarioController::class, 'edit']);
+    Route::post('/horario', [App\Http\Controllers\Doctor\HorarioController::class, 'store']);
 });
 
 //Rutas de Pacientes
