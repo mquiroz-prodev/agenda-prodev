@@ -8,7 +8,7 @@
         {{ config('app.name') }} | Panel
     </title>
     <!-- Favicon -->
-    <link href="{{ asset('img/brand/favicon.png') }}" rel="icon" type="image/png">
+    <link href="{{ asset('img/brand/favicon-pd.png') }}" rel="icon" type="image/png">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <!-- Icons -->
@@ -30,7 +30,7 @@
             </button>
             <!-- Brand -->
             <a class="navbar-brand pt-0" href="#">
-                <img src="{{ asset('img/brand/blue.png') }}" class="navbar-brand-img" alt="LogoCitaMe">
+                <img src="{{ asset('img/brand/logo.png') }}" class="navbar-brand-img" alt="LogoCitaMe">
             </a>
             <!-- User -->
             <ul class="nav align-items-center d-md-none">
@@ -67,7 +67,7 @@
                     <div class="row">
                         <div class="col-6 collapse-brand">
                             <a href="#">
-                                <img src="{{ asset('img/brand/blue.png') }}">
+                                <img src="{{ asset('img/brand/logo.png') }}">
                             </a>
                         </div>
                         <div class="col-6 collapse-close">

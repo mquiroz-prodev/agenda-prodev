@@ -8,7 +8,7 @@
         {{ config('app.name') }} | @yield('title')
     </title>
     <!-- Favicon -->
-    <link href="{{ asset('images\brand\favicon.png') }}" rel="icon" type="image/png">
+    <link href="{{ asset('images\brand\favicon-pd.png') }}" rel="icon" type="image/png">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <!-- Icons -->
@@ -24,7 +24,7 @@
         <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
             <div class="container px-4">
                 <a class="navbar-brand" href="/">
-                    <img src="{{ asset('img/brand/white.png') }}" />
+                    <img src="{{ asset('img/brand/logo-white-pd.png') }}" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-main"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,7 @@
                         <div class="row">
                             <div class="col-6 collapse-brand">
                                 <a href="#">
-                                    <img src="{{ asset('img/brand/blue.png') }}">
+                                    <img src="{{ asset('img/brand/logo.png') }}">
                                 </a>
                             </div>
                             <div class="col-6 collapse-close">
@@ -106,8 +106,8 @@
                 <div class="row align-items-center justify-content-xl-between">
                     <div class="col-xl-6">
                         <div class="copyright text-center text-xl-left text-muted">
-                            © 2022 <a href="https://github.com/StevenU21" class="font-weight-bold ml-1"
-                                target="_blank">StevenU21</a>
+                            © 2024 <a href="https://prodev.cl" class="font-weight-bold ml-1"
+                                target="_blank">Prodev SpA</a>
                         </div>
                     </div>
                 </div>

@@ -13,3 +13,6 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+public/img/.DS_Store
+public/img/icons/.DS_Store
+/storage/framework/sessions/*

@@ -15,21 +15,21 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         User::create([
-            'name' => 'Steven Ulloa Gutierrez',
-            'email' => 'ulloadeifheltsteven@gmail.com',
+            'name' => 'Mario Quiroz',
+            'email' => 'mquiroz@prodev.cl',
             'email_verified_at' => now(),
-            'password' => bcrypt('ulloadeifheltsteven@gmail.com'), // password
-            'identity_card' =>'161-210501-1000K',
-            'address' =>'del panteoncito el carmen 3c al sur y c3 al oeste',
+            'password' => bcrypt('mquiroz@prodev.cl'), // password
+            'identity_card' =>'15517748-9',
+            'address' =>'Jaime Repullo 3445, Casa 13, Talcahuano',
             'phone' => '+505 57196244',
             'role' =>'admin',
         ]);
 
         User::create([
-            'name' => 'Deifhelt Ulloa',
-            'email' => 'deifhelt.ulloa@tecnacional.edu.ni',
+            'name' => 'Teresa Ulloa',
+            'email' => 'teresa.ulloa@gmail.com',
             'email_verified_at' => now(),
-            'password' => bcrypt('deifhelt.ulloa@tecnacional.edu.ni'), // password
+            'password' => bcrypt('teresa.ulloa@gmail.com'), // password
             'identity_card' =>'161-210501-1000F',
             'address' =>'del panteoncito el carmen 3c al sur y c3 al oeste',
             'phone' => '+505 57196245',
@@ -37,18 +37,18 @@ class UsersTableSeeder extends Seeder
         ]);
 
         User::create([
-            'name' => 'Eduardo Gamez',
-            'email' => 'eduardo.gamez@tecnacional.edu.ni',
+            'name' => 'Pedro Perez',
+            'email' => 'pedro.perez@gmail.com',
             'email_verified_at' => now(),
-            'password' => bcrypt('eduardo.gamez@tecnacional.edu.ni'), // password
-            'identity_card' =>'161-210501-1000V',
+            'password' => bcrypt('pedro.perez@gmail.com'), // password
+            'identity_card' =>'12345678-9',
             'address' =>'del panteoncito el carmen 3c al sur y c3 al oeste',
             'phone' => '+505 57196246',
             'role' =>'paciente',
         ]);
 
         User::factory()
-        ->count(50)
+        ->count(10)
         ->state(['role' => 'paciente'])
         ->create();
     }
