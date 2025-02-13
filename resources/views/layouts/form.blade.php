@@ -16,6 +16,12 @@
     <link href="{{ asset('js/plugins/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet" />
     <!-- CSS Files -->
     <link href="{{ asset('css/argon-dashboard.css?v=1.1.2') }}" rel="stylesheet" />
+
+    <style>
+        .bg-gradient-primary {
+            background: linear-gradient(87deg, #172b4d 0, #5f2c82 100%) !important;
+        }
+    </style>
 </head>
 
 <body class="bg-default">
@@ -106,7 +112,7 @@
                 <div class="row align-items-center justify-content-xl-between">
                     <div class="col-xl-6">
                         <div class="copyright text-center text-xl-left text-muted">
-                            © 2024 <a href="https://prodev.cl" class="font-weight-bold ml-1"
+                            © 2025 <a href="https://prodev.cl" class="font-weight-bold ml-1"
                                 target="_blank">Prodev SpA</a>
                         </div>
                     </div>

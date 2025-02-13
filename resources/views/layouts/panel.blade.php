@@ -18,6 +18,12 @@
     <link href="{{ asset('css/argon-dashboard.css?v=1.1.2') }}" rel="stylesheet" />
 
     @yield('styles')
+
+    <style>
+        .bg-gradient-primary {
+            background: linear-gradient(87deg, #172b4d 0, #5f2c82 100%) !important;
+        }
+    </style>
 </head>
 
 <body class="">

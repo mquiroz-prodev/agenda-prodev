@@ -18,6 +18,9 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+            .bg-gradient-primary {
+                background: linear-gradient(87deg, #172b4d 0, #5f2c82 100%) !important;
+            }
         </style>
     </head>
     <body class="antialiased">
